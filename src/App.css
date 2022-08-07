@@ -1,0 +1,6 @@
+body {
+    background-image: url('./images/RickAndMortyBackground.jpg');
+    min-width: 100%;
+    min-height: 100%;
+    color:darkgray;
+}
