@@ -15,3 +15,17 @@ li {
 a {
     color: blue;
 }
+
+img {
+    max-height: 200px;
+    max-width: 200px;
+    transition: transform .5s; /* Animation */
+}
+
+.character-img:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    transition: transform .5s; /* Animation */
+}
