@@ -1,9 +1,9 @@
 nav {
-    background-color: rgb(241, 237, 237);
+    background-color: lightgray;;
 }
 
 a {
-    color: rgb(116, 109, 109);
+    color: darkslategray;
 }
 
 a:hover {
@@ -34,8 +34,8 @@ h2, h3 {
 
 
 .heading {
-    color: rgb(116, 109, 109);
-    background-color: rgb(241, 237, 237);
+    color: black;
+    background-color: lightgray;
 }
 
 .heading:hover {

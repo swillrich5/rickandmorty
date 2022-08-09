@@ -9,7 +9,7 @@ const Navbar = ({ icon, title }) => {
     return (
     <div>
         <nav className="navbar navbar-expand-md navbar-light heading py-0">
-            <Link to='/' ><h3 className="heading"><img src={logo} alt="Rick and Morty Logo" /> {title} </h3></Link>
+            <Link to='/' ><h4 className="heading"><img src={logo} alt="Rick and Morty Logo" /> {title} </h4></Link>
             {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button> */}
@@ -20,11 +20,9 @@ const Navbar = ({ icon, title }) => {
                             <p className="lead pt-3 pb-0 my-2"><span>{"    "}</span>API Queries</p>
                         </div>
                         <div className="dropdown-menu heading" aria-labelledby="navbarDropdown">    
-                            <Link to='/characters' className="dropdown-item"> Characters</Link>
-                            {/* <a className="dropdown-item" href="javascript:void(0)">Character Search</a> */}
-                            <Link to='' className="dropdown-item">Events</Link>
-                            <Link to='' className="dropdown-item">Series</Link>
-                            <Link to='' className="dropdown-item">Creators</Link>
+                            <Link to='' className="dropdown-item">Characters</Link>
+                            <Link to='' className="dropdown-item">Locations</Link>
+                            <Link to='' className="dropdown-item">Episodes</Link>
                         </div>
                     </li>
                 </ul>
