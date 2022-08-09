@@ -10,9 +10,9 @@ const Navbar = ({ icon, title }) => {
     <div>
         <nav className="navbar navbar-expand-md navbar-light heading py-0">
             <Link to='/' ><h3 className="heading"><img src={logo} alt="Rick and Morty Logo" /> {title} </h3></Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
-            </button>
+            </button> */}
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item dropdown">
@@ -41,8 +41,7 @@ Navbar.defaultProps = {
   }
   
   Navbar.propTypes = {
-    title: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired
   }
 
 export default Navbar;
