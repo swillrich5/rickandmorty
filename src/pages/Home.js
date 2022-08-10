@@ -25,7 +25,7 @@ const Home = () => {
             </p>
             <p>Please select one of the categories below to browse content.</p>
             <div className="row justify-content-center">
-                <Link className="justify-content-center ml-3" to='/characters'>
+                <Link className="justify-content-center ml-4" to='/characters'>
                     <div className="card shadow-lg bg-light px-3 rounded mb-3">
                         <img className="card-img-top pt-3" src={characters} alt="Characters"/>
                         <div className="card-body">
@@ -33,7 +33,7 @@ const Home = () => {
                         </div>
                     </div>
                 </Link>
-                <Link className="justify-content-center ml-3" to='/locations'>
+                <Link className="justify-content-center ml-4" to='/locations'>
                     <div className="card shadow-lg bg-light rounded px-3 mb-3">
                         <img className="card-img-top pt-3" src={location} alt="Locations"/>
                         <div className="card-body">
@@ -41,7 +41,7 @@ const Home = () => {
                         </div>
                     </div>
                 </Link>
-                <Link className="justify-content-center ml-3" to='/episodes'>
+                <Link className="justify-content-center ml-4" to='/episodes'>
                     <div className="card shadow-lg bg-light rounded px-3 mb-3">
                         <img className="card-img-top pt-3" src={episode} alt="Episodes"/>
                         <div className="card-body">
