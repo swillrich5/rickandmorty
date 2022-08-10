@@ -14,7 +14,7 @@ a:hover {
 }
 
 .card {
-    width: 250px;
+    width: 200px;
     margin: 0 auto; /* Added */
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
