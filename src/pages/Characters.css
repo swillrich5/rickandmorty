@@ -1,0 +1,21 @@
+.card:hover {
+    transform: scale(1.1);
+    transition: transform .5s; /* Animation */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(116, 109, 109);
+}
+
+#small-font {
+    font-size: 12px;
+}
+
+.card {
+    width: 250px;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
