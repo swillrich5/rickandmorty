@@ -4,14 +4,13 @@ import Spinner from '../components/Spinner';
 import Episodes from '../components/Episodes'
 import './Character.css';
 
-const Character = (props) => {
+const Character = () => {
 
     const location = useLocation();
 
     const [loading, setLoading] = useState(false);
     const character = location.state.character;
-    console.log(character.character); 
-
+    const episodes = character.episode;
 
   if (loading) {
     return <Spinner />
@@ -40,7 +39,7 @@ const Character = (props) => {
                         <div>
                             <hr />
                             <h2>Episodes</h2>
-                            <Episodes state={character.episode}/>
+                            <Episodes episodes={character.episode}/>
                         </div>
                     </div>
                 </div>
