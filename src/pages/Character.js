@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { useLocation } from "react-router-dom";
 import Spinner from '../components/Spinner';
+import Episodes from '../components/Episodes'
 import './Character.css';
 
 const Character = (props) => {
 
     const location = useLocation();
-
-    console.log(props);
 
     const [loading, setLoading] = useState(false);
     const character = location.state.character;
@@ -37,6 +36,11 @@ const Character = (props) => {
                                     </tr>  
                                 </tbody>
                             </table>                            
+                        </div>
+                        <div>
+                            <hr />
+                            <h2>Episodes</h2>
+                            <Episodes state={character.episode}/>
                         </div>
                     </div>
                 </div>
