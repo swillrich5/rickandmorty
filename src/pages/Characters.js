@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
-// import Character from './Character';
+import Pagination from '../components/Pagination';
 import './Home.css';
 import './Characters.css';
 
@@ -52,6 +52,7 @@ const Characters = () => {
                         </Link>
                     )}
                 </div>
+                <Pagination />
             </div>
         </div>
       )    
