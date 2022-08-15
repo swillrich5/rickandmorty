@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
-import Pagination from '../components/Pagination';
+import ReactPaginate from 'react-paginate';
 import './Home.css';
 import './Characters.css';
 
@@ -10,8 +10,8 @@ const Characters = () => {
 
     const [loading, setLoading] = useState(false);
     const [characters, setCharacters] = useState([]);
+    const [pageCount, setPageCount] = useState(0);
 
-  useEffect(() => {
     const getCharacters = async () => {
         console.log("I'm in useEffect for Characters!!!");
         const baseURL = 'https://rickandmortyapi.com/api/character/'
@@ -22,13 +22,17 @@ const Characters = () => {
             const res = await axios.get(URL);
             console.log(res.data.info);
             console.log(res.data.results);
+            console.log(res.data.info);
             setCharacters(res.data.results);
+            setPageCount(res.data.info.pages);
             setLoading(false);
         }
         catch(err) {
             console.log(err);
         }
     }
+
+  useEffect(() => {
     getCharacters();
   }, []);
 
@@ -52,7 +56,15 @@ const Characters = () => {
                         </Link>
                     )}
                 </div>
-                <Pagination />
+                <ReactPaginate
+                    breakLabel="..."
+                    nextLabel="next >"
+                    onPageChange={getCharacters}
+                    pageRangeDisplayed={5}
+                    pageCount={pageCount}
+                    previousLabel="< previous"
+                    renderOnZeroPageCount={null}
+                />
             </div>
         </div>
       )    
