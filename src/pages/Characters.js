@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
 import ReactPaginate from 'react-paginate';
+import './Pagination.css';
 import './Home.css';
 import './Characters.css';
 
@@ -57,6 +58,7 @@ const Characters = () => {
                     )}
                 </div>
                 <ReactPaginate
+                    className='pagination'
                     breakLabel="..."
                     nextLabel="next >"
                     onPageChange={getCharacters}
